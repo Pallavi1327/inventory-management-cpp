@@ -1,4 +1,5 @@
-const API = "http://localhost:8080";
+// IMPORTANT: no localhost, no hardcoded host
+const API = "";
 
 function loadItems() {
     fetch(`${API}/items`)
@@ -23,6 +24,9 @@ function loadItems() {
                     </td>
                 </tr>`;
             });
+        })
+        .catch(err => {
+            console.error("Failed to load items:", err);
         });
 }
 
@@ -55,4 +59,5 @@ function deleteItem(id) {
     }).then(() => loadItems());
 }
 
+// Initial load
 loadItems();
