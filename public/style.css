@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(circle at top, #0f2027, #000);
+    color: #e5e7eb;
+    min-height: 100vh;
+}
+
+.app {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #00eaff, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header p {
+    color: #9ca3af;
+}
+
+/* Cards */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 25px rgba(0, 234, 255, 0.08);
+}
+
+/* Form */
+.form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+input {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00eaff;
+    box-shadow: 0 0 10px #00eaff66;
+}
+
+button {
+    background: linear-gradient(135deg, #00eaff, #8b5cf6);
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00eaff;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    color: #00eaff;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+tr {
+    transition: background 0.2s;
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Delete button */
+td button {
+    background: #ef4444;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+td button:hover {
+    box-shadow: 0 0 10px #ef4444;
+}

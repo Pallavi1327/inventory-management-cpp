@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "name": "windows-clang-x64",
+      "defines": [
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "cStandard": "c17",
+      "cppStandard": "gnu++17",
+      "intelliSenseMode": "windows-clang-x64",
+      "compilerPath": "C:\\Program Files\\CodeBlocks\\MinGW\\bin\\g++.exe",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "C:\\sqlite",
+        "${workspaceFolder}/src"
+      ]
+    }
+  ],
+  "version": 4
+}
